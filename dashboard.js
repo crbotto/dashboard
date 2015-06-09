@@ -66,8 +66,8 @@ var DASH = {
 	 
 		// Set chart options
 		var options = {'title':'Acme Revenue for Q' + quarter + ' - Pie Chart',
-					   'width':750,
-					   'height':200};
+					   'width':'100%',
+					   'height':250};
 
 		var chart = new google.visualization.PieChart(document.getElementById('piechart'));
 		chart.draw(dataTable, options);	  
@@ -81,8 +81,8 @@ var DASH = {
 			title: 'Acme Revenue - Histogram Chart',
 			hAxis: {title: 'Year', titleTextStyle: {color: 'blue'}},
 			vAxis: {title: '$ Millions', titleTextStyle: {color: 'green'}},
-			width: 1500,
-			height: 200
+			width: '75%',
+			height: 250
 		};
 
 		chart = new google.visualization.ColumnChart(document.getElementById('col_chart'));
@@ -98,8 +98,8 @@ var DASH = {
 			legend: { position: 'bottom' },
 			hAxis: {title: 'Year', titleTextStyle: {color: 'blue'}},
 			vAxis: {title: '$ Millions', titleTextStyle: {color: 'green'}},		
-			width: 1500,
-			height: 200,
+			width: '75%',
+			height: 250,
 			colors: ['blue', 'red', 'orange', 'green']			
 		};
 
