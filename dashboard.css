@@ -12,6 +12,7 @@ table{
 	border-collapse: collapse;
 	border: none;
 	margin-left: 110px;
+	align: center;
 }
 
 table tr{
@@ -38,12 +39,6 @@ body,html {
 	padding:0;
 }
 
-#container {
-	height: 100%; 
-	width:100%; 
-	font-size: 0;
-}
-
 #left, #right {
 	display: inline-block; 
 	*display: inline; 
@@ -53,13 +48,13 @@ body,html {
 }
 
 #left {
-	width: 750px; 
+	width: 49%;
 	height:250px;
 	margin-left=15px; 
 }
 
 #right {
-	width: 750px;
+	width: 49%;
 	height:250px;	
 }
 
@@ -72,5 +67,5 @@ body,html {
 }
 
 #col_chart, #curve_chart {
-	width: 1500px;
+	width: 100%;
 }
