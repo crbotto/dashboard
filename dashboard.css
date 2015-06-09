@@ -1,0 +1,76 @@
+div.header{
+	padding: 10px 0 0 0px;
+	height: 50px;
+	font: 14pt verdana, arial, helvetica;
+	font-weight: bolder;
+	color: black;
+	background-color: white;
+	text-align: center;
+}
+
+table{
+	border-collapse: collapse;
+	border: none;
+	margin-left: 110px;
+}
+
+table tr{
+	border: 0px solid #000;
+	text-align: center;
+	font-weight: bolder;
+}
+
+table td{
+	padding: 12px;
+	border:0px solid #DDD;
+	border-spacing: 0px;
+	vertical-align: top;
+}
+
+label.label{
+	font: 10pt verdana, arial, helvetica;
+	font-weight: bolder;
+	color: black;
+}
+
+body,html {
+	margin:0;
+	padding:0;
+}
+
+#container {
+	height: 100%; 
+	width:100%; 
+	font-size: 0;
+}
+
+#left, #right {
+	display: inline-block; 
+	*display: inline; 
+	zoom: 1; 
+	vertical-align: top; 
+	font-size: 12px;
+}
+
+#left {
+	width: 750px; 
+	height:250px;
+	margin-left=15px; 
+}
+
+#right {
+	width: 750px;
+	height:250px;	
+}
+
+#select (
+	display: inline-block; 
+	*display: inline; 
+	zoom: 1; 
+	vertical-align: top;
+	width: 500px;
+}
+
+#col_chart, #curve_chart {
+	width: 1500px;
+}
