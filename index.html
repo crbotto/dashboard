@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Acme's Revenue Dashboard</title>
+		<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+		<script type="text/javascript" src="https://www.google.com/jsapi?autoload={'modules':[{'name':'visualization','version':'1.1','packages':['corechart']}]}"></script>		
+		<script type="text/javascript" src="dashboard.js"></script>
+		<link type="text/css" href="dashboard.css" rel="stylesheet"/>
+
+	<script>
+		/* jquery call when the DOM is fully loaded */
+		$( document ).ready(function() {
+			DASH.init();
+		});
+	</script>
+
+	</head>
+	<body>
+		<div class="header">
+			<div>Acme</div>
+			<div>Revenue Dashboard</div>
+		</div>
+		<br>
+		<div id="container">
+			<div id="left">
+				<table border="0" cellpadding="0"  id="dataTable"> </table>	
+			</div>
+			<div id="right">
+				<div id="select">
+					<label class='label'>Select a Quarter:
+					<select id"quarters" onchange="javascript:DASH.drawPieChart(this.value);">
+						<option value="1">Q1</option>
+						<option value="2">Q2</option>
+						<option value="3">Q3</option>
+						<option value="4">Q4</option>				
+					</select>
+					</label>
+				</div>
+				<div id="piechart"></div>
+			</div>
+		</div>	
+		<div id="col_chart"></div>				
+		<div id="curve_chart"></div>		
+	</body>
+</html>
+
+
+
